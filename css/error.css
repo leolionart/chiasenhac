@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=latin,vietnamese);
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	background: #fff;
+}
+
+
+#container{
+	color:#fff;
+	width:100%;
+	height:600px;
+	text-align:center;
+	top:124px;
+	position:absolute;
+	background:url(../imgs/error.jpg)
+}
+
+#container img{
+	margin-top:130px;
+}
+
+#container p{
+	font-size:40px;
+	color:#3d3d3d;
+	line-height:50px;
+	margin-top:20px;
+}
+
+#container a{
+	text-decoration: underline;	
+	color:#fff;
+}
+#container a:hover{
+	color:#22a86c;
+}
+
+footer{
+	position:absolute;
+ 	top:700px;
+  	width: 100%;
+  	height: 100px;
+	background:#2d2f31;
+	padding-top:50px;
+}
+footer li{
+	color:#fff;
+	margin-bottom: 10px;
+  	float: left;
+  	width: 120px;
+}
+
+.link-footer{
+	width:600px;
+	padding-left:200px;
+	float:left;
+}
+
+footer .logo{
+	float:left
+}
+footer .social{
+	float:right;
+}
+.social img{
+	margin-left:20px;
+}

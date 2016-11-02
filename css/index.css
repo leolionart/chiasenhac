@@ -1,0 +1,532 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=latin,vietnamese);
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	background: url(../imgs/bg.jpg);
+}
+
+
+
+#container{
+	width:100%;
+	top:140px;
+	position:absolute;
+}
+#container #leftCol {
+	width: 930px;
+	float:left;
+}
+#container #rightCol {
+	width: 315px;
+	margin-left:19px;
+	float:left;
+}
+
+
+.ranking a{
+	color:#2d2f31;
+}
+
+a:hover, .rightCol-song a:hover{
+	color:#22a86c;
+	transition:all 0.2s ease;
+}
+
+
+
+#slider {
+  position: relative;
+  overflow: hidden;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 450px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 930px;
+  height: 450px;
+  background: url(../imgs/1.jpg);
+}
+#slider .tile-slide{
+	position:absolute;
+	color:#fff;
+	font-size:120%;
+	top:300px;
+	left:100px;
+}
+.tile-slide h1{
+	font-size:84;
+}
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin-left: 5px;
+  width: 160px;
+  font-size: 18px;
+  z-index:999;
+}
+
+.tile-slide a{
+	color:#fff;
+}
+
+
+#ads{
+	width:314px;
+	height:240px;
+	background:url(../imgs/Ads.jpg);
+	background-repeat:no-repeat;
+}
+
+.button-download{
+	position:relative;
+	top:182px;
+	left:38px;
+	font-size:130%;
+	padding:10px 40px;
+	background: #22a86c;
+	color:#fff;
+	border-radius:5px;
+	cursor:pointer;
+	text-align:center;
+}
+.button-download:hover{
+	color:#fff;
+	background:#25b876;
+	transition:all 0.2s ease;
+}
+
+
+
+.ranking{
+	width:315px;
+	height:843px;
+	background:white;
+	margin-top:5px;
+}
+.ranking h1{
+	font-weight:800;
+}
+
+
+.rank-oder,.rank-oder1,.rank-oder2,.rank-oder3{
+	width:38px;
+	height:34px;
+	background:url(../imgs/1.png);
+	background-repeat:no-repeat;
+	text-align:center;
+	float:left;
+	padding-top:5px;
+	margin:0px;
+	font-size:150%;
+	font-weight:lighter;
+	color:#fff;
+	margin-right:10px;
+	margin-left:20px;
+	z-index:1;
+}.rank-oder1{background:url(../imgs/1.png);}
+.rank-oder2{background:url(../imgs/2.png);}
+.rank-oder3{background:url(../imgs/3.png);}
+
+.des,.des2,.des3{
+	height:60px;
+	width:315px;
+	color:white;
+	background:url(../imgs/US.jpg);
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	z-index:1;
+	padding-top:80px;
+	
+}
+
+.des2{background:url(../imgs/V.jpg)}
+.des3{background:url(../imgs/K.jpg)}
+
+.des a,.des2 a,.des3 a{
+	color:#fff;
+	font-weight:lighter;
+}
+
+.ui-tabs{position:relative;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor{float:left;padding:16px 27.71px;text-decoration:none}
+
+
+
+.score{
+	position:absolute;
+	right:15px;
+	margin-top:-20px;
+	font-size:90%;
+}
+
+.fn-songs{
+	margin-top:5px;
+}
+
+.fn-songs a{
+	font-weight:lighter;
+}
+
+.fn-songs .score{
+	position:absolute;
+	right:15px;
+	margin-top:-10px;
+	font-size:90%;
+}
+.tile-songs{
+	margin-top:13px;
+	margin-bottom:13px;
+}
+
+
+.albumCol{
+	position:absolute;
+	top:460px;
+}
+
+.albumTile{
+	border-bottom:1px solid #fff;
+	margin-bottom:10px;
+	margin-top:15px;
+	width:928px;
+}
+.albumTile h1{
+	color:white; 
+	text-transform:uppercase;
+	margin-right:600px;	 
+}
+#Next,#Prev{
+	cursor:pointer;
+	margin:right;
+	margin-left:5px;
+}
+
+.album{
+	width:218px;
+	height:300px;
+	margin-right:19px;
+	float:left;
+	background:#2d2f31;
+}
+
+.alTile{
+	margin-top:10px;
+	margin-left:15px;
+	line-height:20px;
+	position:absolute;
+}
+
+.al-name{
+	position:relative;
+	color:white;
+}
+.artist{
+	position:relative;
+	top: 15px;
+	bottom:0px;
+	color:white;
+}
+.al-score{
+	position:relative;
+	bottom: 5px;
+  	left: 130px;
+	right:5px;
+	color:#fff;
+}
+
+.videoCol{
+	position:absolute;
+	top:820px;
+}
+
+.videoTile{
+	border-bottom:1px solid #fff;
+	margin-bottom:10px;
+	margin-top:15px;
+	width:928px;
+}
+.videoTile h1{
+	color:white; 
+	text-transform:uppercase;
+	margin-right:700px;	 
+}
+
+
+
+#newSongs {
+	height: 500px;
+	background:#2d2f31;
+	position:relative;
+	top:1305px;
+}
+
+.list-songs a:hover{
+	color:#22a86c;
+}
+
+.leftCol-songs,.rightCol-songs{
+	padding-top:30px;
+	width:600px;
+	height:470px;
+	float:left;
+}
+.leftCol-songs{
+	padding-right:30px;
+	border-right:1px solid #22a86c;
+}
+
+.rightCol-songs{
+	padding-left:30px;
+}
+
+
+.leftCol-songs h1,.rightCol-songs h1{
+	color:white; 
+	text-transform:uppercase; 
+}
+.leftCol-songs a,.rightCol-songs a{
+	margin-bottom:15px;
+	margin-top:15px;
+	color:#fff;
+	display: inline-block;
+}
+
+.leftCol-songs .fn-number,.rightCol-songs .fn-number{
+	display: inline-block;
+	float:right;
+	position:relative;
+	margin-top: 15px;
+	font-style:normal;
+}
+
+.leftCol-songs li,.rightCol-songs li{
+	border-bottom:1px solid #22a86c;
+	color:#fff;
+}
+
+.clearFloat{
+	clear:both}
+
+
+
+#genres {
+	width:100%;
+	height:400px;
+	position:absolute;
+	top:1830px;
+}
+.genresTile{
+	border-bottom:1px solid #fff;
+	padding-bottom:5px;
+	margin-bottom:10px;
+	width:1261px;
+}
+#genres h1{
+	color:white;
+	text-transform:uppercase;
+	margin-right:1090px;
+	font-weight:bold;
+}
+
+.genres{
+	width:190px;
+	height:190px;
+	margin-right: 22px;
+  	margin-bottom: 22px;
+	text-align:center;
+	background:rgba(0,0,0,0.80);
+}
+.genres img{
+	margin: 30px 40px 0px 40px;
+}
+.genres a{
+	color:#fff;
+	font-size:16px;
+	font-weight:lighter;
+}
+.genres a:hover{
+	text-decoration: underline;
+	color:#fff;
+}
+
+
+
+.preview{
+	overflow:hidden;
+	cursor:pointer;
+	height:200px;
+	text-align:center;
+}
+.imgHover{
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s ease;
+}
+
+.preview:hover .imgHover{
+	margin-top:-130px;
+}
+
+
+
+.video1{
+	width:455px;
+	height:255px;
+	margin-top: -10px;
+	background:url(../imgs/index_98.jpg);
+	cursor:pointer;
+	overflow:hidden;
+}
+.video-small{
+	margin-bottom:14px;
+	margin-left:14px;
+	
+}
+
+.video-small{
+	width:218px;
+	height:117px;
+	overflow:hidden;
+	cursor:pointer;
+	text-align:center;
+}
+
+
+.video1 .imgHover{
+	padding-top:230px;
+	text-align:center;
+}
+.video1:hover .imgHover{
+	padding-top:70px;
+	transition: all 0.2s ease;
+}
+.video1 .tile-video{
+	color:#fff;
+	position:relative;
+	margin-left:20px;
+	top:190px;
+}
+.video1:hover .tile-video{
+	top:500px;
+	transition: all 1s ease;
+}
+
+.video-small .imgHover{
+	text-align:center;
+	margin-top:90px;
+}
+.video-small .tile-video{
+	color:#fff;
+	position:relative;
+	margin-left:20px;
+	top:60px;
+	text-align:left;
+}
+.tile-video h3{font-size:15px}
+
+.video-small:hover .imgHover{
+	transition: all 0.2s ease;
+	margin-top:5px;
+}
+
+.video-small:hover .tile-video{
+	top:700px;
+	transition: all 0.9s ease;
+}
+
+footer{
+	position:absolute;
+ 	top: 2330px;
+  	width: 100%;
+  	height: 100px;
+	background:#2d2f31;
+	padding-top:50px;
+}
+footer li{
+	color:#fff;
+	margin-bottom: 10px;
+  	float: left;
+  	width: 120px;
+}
+
+.link-footer{
+	width:600px;
+	padding-left:200px;
+	float:left;
+}
+
+footer .logo{
+	float:left
+}
+footer .social{
+	float:right;
+}
+.social img{
+	margin-left:20px;
+}
+
+
+
+
+#moveDiv {
+	position: absolute;
+	width: 950px;
+	clip:rect(0px, 950px, 300px, 0px);
+}
+
+
+#moveDiv2 {
+	position: absolute;
+	width: 950px;
+	clip:rect(0px, 950px, 255px, 0px);
+	overflow:hidden;
+}
+
+#k1,#k2{
+	float:left;
+}

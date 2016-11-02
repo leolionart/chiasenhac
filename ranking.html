@@ -1,0 +1,1722 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hear the world’s sounds</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="Shortcut icon" href="imgs/logo.gif" type="image/gif" sizes="16x16">
+<link href="css/ranking.css" rel="stylesheet" type="text/css" />
+<link href="css/header.css" rel="stylesheet" type="text/css" >
+<link href="css/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.11.1.min.js" ></script>
+<script src="js/jquery.ui-1.10.4.tabs.min.js" ></script>
+<script src="js/dropit.js"></script>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+	});
+	
+$(function() {
+	$( "#Tabs2" ).tabs(); 
+});	
+
+$(function() {
+	$( "#Tabs3" ).tabs(); 
+});
+
+$(document).ready(function() {
+    	$('.mainNav').dropit();
+		
+	});
+</script>
+</head>
+
+<body>
+ <div id="header">
+	<div id="topHeader">
+        <div class="wpage"> 
+            <a href="index.html"><img src="imgs/logo.png" class="logo"/></a>
+            
+            <div class="boxSearch">
+            	<form>
+                <input id="txtSearch" maxlength="90" name="q" type="text" class="i-search" placeholder="search..." autocomplete="off" autofocus>
+                <input id="btnSearch" type="submit" class="b-search" value="  ">
+            	</form>
+            </div><!--end of boxSearch-->
+            
+            <div class="upload"><a href="#">Upload</a></div><!--end of upload-->
+            <div>
+            	<table class="loginForm">
+                  <tbody>
+                    <tr>
+                      <td><img src="imgs/ava.png" class="avaUser"/></td>
+                      <td><p class="nameUser">Leo Lion</p></td>
+                      <td><img src="imgs/setting.png" class="setting"/></td>
+                    </tr>
+                  </tbody>
+                </table>
+      
+            </div><!--end of sign-->
+    </div>
+   </div><!--end of topHeader-->      
+  	<nav>	
+  		<div class="mainNav">
+  		<ul class="wpage">
+          <li><a href="index.html" >Home</a></li>
+          <li ><a href="ranking.html"  class="selected">Ranking</a>
+          	<ul class="dropit-submenu">
+                <li><a href="#">Daily</a></li>
+                <li><a href="#">Weekly</a></li>
+                <li><a href="#">Monthly</a></li>
+                <li><a href="#">Annually</a></li>
+            </ul>
+          </li>
+          <li><a href="playlist.html" >Playlist</a>
+          	<ul class="dropit-submenu">
+                <li><a href="#">Album of month</a></li>
+                <li><a href="#">The best of single</a></li>
+                <li><a href="#">Relax</a></li>
+                <li><a href="#">Annually</a></li>
+            </ul>
+          </li>
+          <li><a href="video.html" >Video</a>
+          	<ul class="dropit-submenu-long">
+            	<ol class="col1">
+                    <li><a href="#">New & Hot</a></li>
+                    <li><a href="#">Funny</a></li>
+                    <li><a href="#">TV show</a></li>
+                    <li><a href="#">Funny</a></li>
+                </ol>
+                <ol class="col2">
+                    <li><a href="#">US-UK</a></li>
+                    <li><a href="#">V-Pop</a></li>
+                    <li><a href="#">K-Pop</a></li>
+                    <li><a href="#">China</a></li>
+                </ol>
+            </ul>
+          </li>
+          
+          <li><a href="artist.html" >Artist</a>
+          	<ul class="dropit-submenu">
+                <li><a href="#">Viet Nam</a></li>
+                <li><a href="#">US-UK</a></li>
+                <li><a href="#">Korea</a></li>
+                <li><a href="#">China</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="error.html" >Genres</a>
+          	<ul class="dropit-submenu-long dropit-submenu-long2">
+            	<ol class="col1">
+                    <li><a href="#">Pop</a></li>
+                    <li><a href="#">Rock</a></li>
+                    <li><a href="#">EDM/Dance</a></li>
+                    <li><a href="#">Rap/Hiphop</a></li>
+                </ol>
+                <ol class="col2">
+                    <li><a href="#">OST</a></li>
+                    <li><a href="#">Blue/Jazz</a></li>
+                    <li><a href="#">Folk</a></li>
+                    <li><a href="#">indie</a></li>
+                </ol>
+                <ol class="col3">
+                    <li><a href="#">New Age/World Music</a></li>
+                    <li><a href="#">Christian & Gospel</a></li>
+                </ol>
+            </ul>
+          </li>
+       </ul>
+       </div>
+  </nav>
+  
+ </div>   
+ <!--end of header-->    
+        <div id="container">	
+            <div class="headTile">
+                	<div class="wpage">
+                        <h1>Ranking</h1>
+                        <p class="text">Last updated on Monday every week, data from the Statistics other 
+    prestigious music charts like Billboard (US-UK), Soompi (K-Pop)</p>                
+                	</div>
+             </div>
+            <div class="wpage">
+            
+                <div  class="music-ranking">
+                    <table style="margin-bottom:5px;padding-top:10px;">
+                          <tbody>
+                            <tr>
+                              <td><h1 style="text-transform:uppercase; margin-right:112px;color:#22a86c">Music Ranking</h1></td>
+                              <td><img src="imgs/play-all-gray.png" style="cursor:pointer"/></td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                    <div id="Tabs1" class="ranking">
+                      <ul>
+                        <li><a href="#tabs-1">US-UK</a></li>
+                        <li><a href="#tabs-2">Viet Nam</a></li>
+                        <li><a href="#tabs-3">Korea</a></li>
+                      </ul>
+                      <div id="tabs-1">
+                      	<div class="des" style="background:url(imgs/index_99.jpg);">
+                        	<span class="rank-oder">1</span>
+                            <h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            <h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4>
+                            <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                           </table>
+                        </div>
+                        
+                        <table class="fn-songs">
+                          <tbody>
+                            <tr>
+                              <td><span class="rank-oder2">2</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">3</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">4</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder2">5</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">6</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">7</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder2">8</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">9</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">10</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        
+                      </div>
+                      <div id="tabs-2">
+                        <div class="des2">
+                        	<span class="rank-oder">1</span>
+                            <h3 class="song-name"><a href="#" >Sâu trong em</a></h3>
+                            <h4 class="info-artist"><a href="#">Bích Phương</a></h4>
+                            <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset.png"/></td>
+                                      <td><span style="margin-left:5px;">35,685</span></td>
+                                    </tr>
+                                  </tbody>
+                           </table>
+                        </div>
+                        
+                        <table class="fn-songs">
+                          <tbody>
+                            <tr>
+                              <td><span class="rank-oder2">2</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >Ấn nút nhớ thả...</a></h3>
+                            		<h4 class="info-artist"><a href="#">Sơn Thùng MTP</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">23,451</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">3</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >My everything</a></h3>
+                            		<h4 class="info-artist"><a href="#">Tien Tien</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">23,601</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">4</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder2">5</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">6</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">7</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder2">8</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">9</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">10</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div id="tabs-3">
+                        <div class="des3">
+                        	<span class="rank-oder">1</span>
+                            <h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            <h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4>
+                            <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset.png"/></td>
+                                      <td><span style="margin-left:5px;">62,368</span></td>
+                                    </tr>
+                                  </tbody>
+                           </table>
+                        </div>
+                        
+                        <table class="fn-songs">
+                          <tbody>
+                            <tr>
+                              <td><span class="rank-oder2">2</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">3</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">4</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder2">5</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">6</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">7</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder2">8</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">9</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">10</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>   <!--end of ranking-->  
+                
+                <div class="video-ranking">
+                    <table style="margin-bottom:5px;padding-top:10px;">
+                          <tbody>
+                            <tr>
+                         	  <td><h1 style="text-transform:uppercase; margin-right:114px;color:#22a86c">Video Ranking</h1></td>
+                              <td><img src="imgs/play-all-gray.png" style="cursor:pointer"/></td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                    <div id="Tabs2" class="ranking">
+                      <ul>
+                        <li><a href="#tabs-1">US-UK</a></li>
+                        <li><a href="#tabs-2">Viet Nam</a></li>
+                        <li><a href="#tabs-3">Korea</a></li>
+                      </ul>
+                      <div id="tabs-1">
+                      	<div class="des" style="background:url(imgs/rank-video.jpg)">
+                        	<span class="rank-oder">1</span>
+                            <h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            <h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4>
+                            <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                           </table>
+                        </div>     
+                        <table class="fn-songs">
+                          <tbody>
+                            <tr>
+                              <td><span class="rank-oder2">2</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">3</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">4</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder2">5</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">6</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">7</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder2">8</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">9</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">10</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                          </tbody>
+                        </table>   
+                      </div>
+                      
+                      <div id="tabs-2">
+                        <div class="des2">
+                        	<span class="rank-oder">1</span>
+                            <h3 class="song-name"><a href="#" >Sâu trong em</a></h3>
+                            <h4 class="info-artist"><a href="#">Bích Phương</a></h4>
+                            <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset.png"/></td>
+                                      <td><span style="margin-left:5px;">35,685</span></td>
+                                    </tr>
+                                  </tbody>
+                           </table>
+                        </div> 
+                        <table class="fn-songs">
+                          <tbody>
+                            <tr>
+                              <td><span class="rank-oder2">2</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >Ấn nút nhớ thả...</a></h3>
+                            		<h4 class="info-artist"><a href="#">Sơn Thùng MTP</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">23,451</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">3</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >My everything</a></h3>
+                            		<h4 class="info-artist"><a href="#">Tien Tien</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">23,601</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">4</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder2">5</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">6</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">7</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder2">8</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">9</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">10</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      
+                      <div id="tabs-3">
+                        <div class="des3">
+                        	<span class="rank-oder">1</span>
+                            <h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            <h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4>
+                            <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset.png"/></td>
+                                      <td><span style="margin-left:5px;">62,368</span></td>
+                                    </tr>
+                                  </tbody>
+                           </table>
+                        </div>
+                        <table class="fn-songs">
+                          <tbody>
+                            <tr>
+                              <td><span class="rank-oder2">2</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">3</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">4</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder2">5</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">6</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">7</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder2">8</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">9</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">10</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      
+                    </div>
+                  </div>   <!--end of ranking--> 
+                  
+                 <div class="album-ranking">
+                    <table style="margin-bottom:5px;padding-top:10px;">
+                          <tbody>
+                            <tr>
+                              <td><h1 style="text-transform:uppercase; margin-right:98px;color:#22a86c">Album Ranking</h1></td>
+                              <td><img src="imgs/play-all-gray.png" style="cursor:pointer"/></td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                    <div id="Tabs3" class="ranking">
+                      <ul>
+                        <li><a href="#tabs-1">US-UK</a></li>
+                        <li><a href="#tabs-2">Viet Nam</a></li>
+                        <li><a href="#tabs-3">Korea</a></li>
+                      </ul>
+                      <div id="tabs-1">
+                      	<div class="des" style="background:url(imgs/rank-album.jpg)">
+                        	<span class="rank-oder">1</span>
+                            <h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            <h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4>
+                            <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                           </table>
+                        </div>     
+                        <table class="fn-songs">
+                          <tbody>
+                            <tr>
+                              <td><span class="rank-oder2">2</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">3</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">4</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder2">5</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">6</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">7</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder2">8</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">9</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">10</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                          </tbody>
+                        </table>   
+                      </div>
+                      
+                      <div id="tabs-2">
+                        <div class="des2">
+                        	<span class="rank-oder">1</span>
+                            <h3 class="song-name"><a href="#" >Sâu trong em</a></h3>
+                            <h4 class="info-artist"><a href="#">Bích Phương</a></h4>
+                            <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset.png"/></td>
+                                      <td><span style="margin-left:5px;">35,685</span></td>
+                                    </tr>
+                                  </tbody>
+                           </table>
+                        </div> 
+                        <table class="fn-songs">
+                          <tbody>
+                            <tr>
+                              <td><span class="rank-oder2">2</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >Ấn nút nhớ thả...</a></h3>
+                            		<h4 class="info-artist"><a href="#">Sơn Thùng MTP</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">23,451</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">3</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >My everything</a></h3>
+                            		<h4 class="info-artist"><a href="#">Tien Tien</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">23,601</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">4</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder2">5</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">6</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">7</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder2">8</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">9</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">10</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      
+                      <div id="tabs-3">
+                        <div class="des3">
+                        	<span class="rank-oder">1</span>
+                            <h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            <h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4>
+                            <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset.png"/></td>
+                                      <td><span style="margin-left:5px;">62,368</span></td>
+                                    </tr>
+                                  </tbody>
+                           </table>
+                        </div>
+                        <table class="fn-songs">
+                          <tbody>
+                            <tr>
+                              <td><span class="rank-oder2">2</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">3</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">4</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder2">5</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">6</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">7</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder2">8</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder3">9</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                            <tr>
+                              <td><span class="rank-oder1">10</span></td>
+                              <td><div class="tile-songs">
+                              		<h3 class="song-name"><a href="#" >See You Again</a></h3>
+                            		<h4 class="info-artist"><a href="#">Wiz Khalifa</a></h4></div></td>
+                              <td>
+                              <table class="score">
+                                  <tbody>
+                                    <tr>
+                                      <td><img src="imgs/headset_bl.png"/></td>
+                                      <td><span style="margin-left:5px;">53,615</span></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                             </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      
+                    </div>
+                  </div>   <!--end of ranking-->  
+                        
+           	</div>
+       </div><!--end of container-->
+      
+        <footer>
+        	<div class="wpage">
+            	<img src="imgs/logo.png" class="logo"/>
+                <ul class="link-footer">
+                	<li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Điều khoản</a></li>
+                    <li><a href="#">Quảng cáo</a></li>
+                    <li><a href="#">Ứng dụng</a></li>
+                    <li><a href="#">Copyright</a></li>
+                    
+                    <li><a href="#">Trợ giúp</a></li>
+                    <li><a href="#">Góp ý</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+                
+                <table class="social">
+                  <tbody>
+                    <tr>
+                      <td><a href="#"><img src="imgs/tw.png"/></a></td>
+                      <td><a href="#"><img src="imgs/fb.png"/></a></td>
+                      <td><a href="#"><img src="imgs/g+.png"/></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+            </div>
+        </footer>
+        <div id="dt-btt"><img src="imgs/go-top.png" /></div>  
+        <div id="playing"></div>
+        
+        
+        
+<script type='text/javascript'>
+$(function(){
+	$(window).scroll(function(){if($(this).scrollTop()!=0){$('#dt-btt').fadeIn();}else{$('#dt-btt').fadeOut();}});
+	$('#dt-btt').click(function(){$('body,html').animate({scrollTop:0},800);});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+
+.ui-tabs .ui-tabs-nav{margin:0;height: 52px;}
+.ui-tabs .ui-tabs-nav li{list-style:none;float:left;position:relative;top:0;border-bottom-width:0;padding:0;white-space:nowrap}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active{margin-bottom:-1px;padding-bottom:1px}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,.ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,.ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor{cursor:text}
+.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor{cursor:pointer}
+.ui-tabs .ui-tabs-panel{display:block;border-width:0;background:none}
+
+
+#Tabs1 li a,#Tabs2 li a,#Tabs3 li a{font-weight:bold;color:#373737;}
+
+.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active{background:#fff url("../imgs/Nav_selected.png") 50% 50% repeat-x;font-weight:bold;color:#eb8f00}
+
+.ui-state-active a,.ui-state-active a:link,.ui-state-active a:visited{text-decoration:none}

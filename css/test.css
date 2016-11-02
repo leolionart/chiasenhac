@@ -1,0 +1,13 @@
+@charset "utf-8";
+body{
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	background: black;
+}
+img{
+	width:1348px;
+	height:auto;
+	margin:0px;
+	padding:0px;
+}

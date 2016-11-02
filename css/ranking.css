@@ -1,0 +1,174 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=latin,vietnamese);
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	background: #fff;
+}
+
+
+#container{
+	width:100%;
+	top:124px;
+	position:absolute;
+}
+
+.headTile{
+	text-align:center;
+	color:#fff;
+	background:url(../imgs/bg.jpg);
+	width:100%;
+	padding-top:20px;
+	padding-bottom:10px;
+	height:100px;
+	margin-bottom:10px;
+}
+
+.headTile h1{
+	text-transform:uppercase;
+	font-weight:900;
+}
+
+.headTile p{
+	margin-top:10px;
+	padding-bottom:10px;
+	padding-top:10px;
+	border-bottom:1px solid #fff;
+	border-top:1px solid #fff;
+}
+
+.ranking a{
+	color:#2d2f31;
+}
+
+a:hover, .rightCol-song a:hover{
+	color:#22a86c;
+	transition:all 0.2s ease;
+}
+
+.ranking{
+	width:380px;
+	height:839px;
+	background:white;
+	margin-top:5px;
+}
+.ranking h1{
+	font-weight:800;
+}
+
+
+.rank-oder,.rank-oder1,.rank-oder2,.rank-oder3{
+	width:38px;
+	height:34px;
+	background:url(../imgs/1.png);
+	background-repeat:no-repeat;
+	text-align:center;
+	float:left;
+	padding-top:5px;
+	margin:0px;
+	font-size:150%;
+	font-weight:lighter;
+	color:#fff;
+	margin-right:10px;
+	margin-left:20px;
+	z-index:1;
+}.rank-oder1{background:url(../imgs/1.png);}
+.rank-oder2{background:url(../imgs/2.png);}
+.rank-oder3{background:url(../imgs/3.png);}
+
+.des,.des2,.des3{
+	height:60px;
+	width:380px;
+	color:white;
+	background:url(../imgs/rank-song.jpg);
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	z-index:1;
+	padding-top:80px;
+	
+}
+
+.des2{background:url(../imgs/V.jpg)}
+.des3{background:url(../imgs/K.jpg)}
+
+.des a,.des2 a,.des3 a{
+	color:#fff;
+	font-weight:lighter;
+}
+
+.ui-tabs{position:relative;
+	border:1px solid #D5D5D5;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor{float:left;padding:16px 38.55px;text-decoration:none}
+
+
+.score{
+	position:absolute;
+	right:15px;
+	margin-top:-20px;
+	font-size:90%;
+}
+
+.fn-songs{
+	margin-top:5px;
+}
+
+.fn-songs a{
+	font-weight:lighter;
+}
+
+.fn-songs .score{
+	position:absolute;
+	right:15px;
+	margin-top:-10px;
+	font-size:90%;
+}
+.tile-songs{
+	margin-top:13px;
+	margin-bottom:13px;
+}
+
+.music-ranking,.video-ranking{
+	float:left;
+	margin-right:50px;
+}
+
+.album-ranking{
+	float:left;
+}
+
+
+
+footer{
+	position:absolute;
+ 	top:1245px;
+  	width: 100%;
+  	height: 100px;
+	background:#2d2f31;
+	padding-top:50px;
+}
+footer li{
+	color:#fff;
+	margin-bottom: 10px;
+  	float: left;
+  	width: 120px;
+}
+
+.link-footer{
+	width:600px;
+	padding-left:200px;
+	float:left;
+}
+
+footer .logo{
+	float:left
+}
+footer .social{
+	float:right;
+}
+.social img{
+	margin-left:20px;
+}
